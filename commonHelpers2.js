@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-ec808ebb.js";import{P as r,l}from"./assets/vendor-ceec3c52.js";const n=document.getElementById("vimeo-player"),t=new r(n),a="videoplayer-current-time";function c(){t.getCurrentTime().then(e=>{localStorage.setItem(a,e)}).catch(e=>{console.error(e)})}function m(){const e=localStorage.getItem(a);e!==null&&t.setCurrentTime(e).then(()=>{t.play()}).catch(o=>{console.error("Error setting playback time:",o)})}const s=l(c,1e3);t.on("timeupdate",()=>{s()});m();
+//# sourceMappingURL=commonHelpers2.js.map
