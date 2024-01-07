@@ -37,6 +37,8 @@ function handleSubmit(e) {
   e.preventDefault();
   const { email, message } = e.target.elements;
 
+  if (!email.value || !message.value) return;
+
   console.log({ email: email.value, message: message.value });
   email.value = '';
   message.value = '';
